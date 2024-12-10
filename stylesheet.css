@@ -227,7 +227,7 @@ width: 100%;
     .nav__link {
         font-size: 11px;
         color: #E6E6E6;
-        transition: 0;
+        /* transition: 0; */
     }
 
     .btn {
