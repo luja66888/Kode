@@ -8,49 +8,49 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <header class="header">
-        <div class="top-bar">
-            <div class="top-bar__content">
-                <a href="#" class="logo">
-                    <img src="/billeder/Logo sort grå færdig.webp" alt="logo Infobucket" class="logo__img" style="width: 40px; height: 50px;">
-                    <span class="logo__tex">INFOBUCKET</span>
-                </a>
-
-                <nav class="nav">
-                    <ul class="nav__list">
-                        <li class="nav__item">
-                            <a href="#" class="nav__link">HJEM</a> 
-                        </li>
-                        <li class="nav__item">
-                            <a href="#" class="nav__link">PROJEKTER</a> 
-                        </li>
-                        <li class="nav__item">
-                            <a href="#" class="btn">KONTAKT</a> 
-                        </li>
-                    </ul>
-                </nav>
-            </div>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="/billeder/Logo sort grå færdig.webp" alt="Logo Infobucket"> 
+            <a href="#">MyLogo</a>
         </div>
-    </header>
-
-    <div>
-        <div class="container__top">
-            <h1>
-                INFOBUCKET
-            </h1>
-            <br>
-            <h3>
-                Af Lucas Jæger
-            </h3>
+        <ul class="nav-links">
+            <li><a href="#" class="active">HJEM</a>
+            </li>
+            <li><a href="#">PROJEKTER</a></li>
+            <li><a href="#"></a>KONTAKT</a></li>
+        </ul>
+        <div class="menu-toggle">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
         </div>
-    </div>
+    </nav>
 
-    <div>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const menuToggle =
+        document.querySelector('.menu-toggle');
+            const navLinks =
+        document.querySelector('.nav-links');
+
+            menuToggle.addEventListener('click', () => {
+                navLinks.classList.toggle('active');
+            });
+            });
+    </script>
+
+    <div class="om__mig">
         <h2>
             OM MIG
         </h2>
-        <div>
-            <img src="/billeder/portrait.png" alt="portræt af mig" style="width: 300px; height: 220px;">
+        <div class="infoboks__1">
+
+        </div>
+        <div class="infoboks__2">
+
+        </div>
+        <div class="infoboks__3">
+
         </div>
     </div>
 
