@@ -218,3 +218,51 @@ body {
         display: flex;
     }
 }
+
+/* PROJEKTER */
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 10px;
+    background-color: #8e8f8f;
+    padding: 15px;
+  }
+  
+  .grid-container > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+  }
+
+
+/* KONTAKT */
+input[type=text], select, texarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #949494;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=kommentar] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=kommentar]:hover {
+    background-color: #45a049;
+}
+
+.kontaktformular {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}

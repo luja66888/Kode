@@ -7,37 +7,76 @@
     <link rel="stylesheet" href="stylesheet.css">
 </head>
 <body>
-    <body>
-        <nav class="navbar">
-            <div class="logo">
+    <nav class="navbar">
+        <div class="logo">
                 <!-- <img src="/billeder/Logo sort grå færdig.webp" alt="Logo Infobucket"> -->
-                <a href="#">INFOBUCKET</a>
+            <a href="#">INFOBUCKET</a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#">HJEM</a>
+            </li>
+            <li><a href="#">PROJEKTER</a></li>
+            <li><a href="#" class="active">KONTAKT</a></li>
+        </ul>
+        <div class="menu-toggle">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </nav>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const menuToggle =
+        document.querySelector('.menu-toggle');
+            const navLinks =
+        document.querySelector('.nav-links');
+    
+            menuToggle.addEventListener('click', () => {
+                navLinks.classList.toggle('active');
+            });
+            });
+    </script>    
+    
+    <div class="kontaktformular">
+        <form action="action_page.php">
+            <label for="fnavn">Fulde Navn</label>
+            <input type="text" id="første" name="fuldenavn" placeholder="Dit navn...">
+
+            <label for="mobil">Mobil</label>
+            <input type="text" id="anden" name="mobilnummer" placeholder="Mobilnummer...">
+
+            <label for="email">E-mail</label>
+            <input type="text" id="tredje" name="emailen" placeholder="E-mail...">
+
+            <label for="emne">Emne</label>
+            <select id="fjerde" name="emne">
+                <option value="hjem">Hjem</option>
+                <option value="projekter">Projekter</option>
+                <option value="kontakt">Kontakt</option>
+            </select>
+
+            <label for="kommentar">Kommentar</label>
+            <textarea id="femte" name="kommentarer" placeholder="Skriv noget..." style="height:200px"></textarea>
+
+            <input type="send" value="Send">
+        </form>
+    </div>
+    
+    <footer>
+        <div class="bottom-bar">
+            <div class="bottom-bar__content">
+                <div class="telefon">
+                    <i class="fa-solid fa-phone icon"></i>
+                    +45 27 99 37 70
+                </div>
+
+                <div class="email">
+                    <i class="fa-solid fa-envelope icon"></i>
+                    lucasjaeger@yahoo.dk
+                </div>
             </div>
-            <ul class="nav-links">
-                <li><a href="#">HJEM</a>
-                </li>
-                <li><a href="#">PROJEKTER</a></li>
-                <li><a href="#" class="active">KONTAKT</a></li>
-            </ul>
-            <div class="menu-toggle">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
-        </nav>
-    
-        <script>
-            document.addEventListener('DOMContentLoaded', () => {
-                const menuToggle =
-            document.querySelector('.menu-toggle');
-                const navLinks =
-            document.querySelector('.nav-links');
-    
-                menuToggle.addEventListener('click', () => {
-                    navLinks.classList.toggle('active');
-                });
-                });
-        </script>    
-    
+        </div>
+    </footer>
 </body>
 </html>
