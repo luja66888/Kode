@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KONTAKT</title>
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+    <body>
+        <nav class="navbar">
+            <div class="logo">
+                <!-- <img src="/billeder/Logo sort grå færdig.webp" alt="Logo Infobucket"> -->
+                <a href="#">INFOBUCKET</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#">HJEM</a>
+                </li>
+                <li><a href="#">PROJEKTER</a></li>
+                <li><a href="#" class="active">KONTAKT</a></li>
+            </ul>
+            <div class="menu-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    
+        <script>
+            document.addEventListener('DOMContentLoaded', () => {
+                const menuToggle =
+            document.querySelector('.menu-toggle');
+                const navLinks =
+            document.querySelector('.nav-links');
+    
+                menuToggle.addEventListener('click', () => {
+                    navLinks.classList.toggle('active');
+                });
+                });
+        </script>    
+    
+</body>
+</html>
