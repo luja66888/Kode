@@ -223,8 +223,20 @@ body {
 
 
 /* PROJEKTER */
-.projekter container {
-    width: 100%;
+
+
+
+.projekter img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.projekter video {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    padding: 50px 0;
 }
 
 
