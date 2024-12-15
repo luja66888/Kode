@@ -5,12 +5,6 @@
     box-sizing: border-box;
 }
 
-/* OVERSKRIFTER */
-h1,
-p {
-    margin: 16px;
-}
-
 /* NAV BAR */
 .navbar {
     display: flex;
@@ -148,10 +142,10 @@ body {
 
 .split {
     display: flex;
-    flex-direction: space-between;
+    flex-direction: row;
     align-items: center;
-    flex-wrap: wrap;
-    gap: 30px;
+    justify-content: space-between;
+    gap: 20px;
 }
 
 .intro-billede {
@@ -161,7 +155,13 @@ body {
     box-shadow: 0 4px 8px #000000;
 }
 
+.intro-billede img {
+    max-width: 100%;
+    height: auto;
+}
+
 .intro-tekst h2 {
+    margin: 16px;
     font-size: 28px;
     font-weight: bold;
     margin-bottom: 15px;
@@ -169,6 +169,7 @@ body {
 }
 
 .intro-tekst p {
+    margin: 16px;
     font-size: 16px;
     line-height: 1.6;
     margin-bottom: 20px;
@@ -178,6 +179,7 @@ body {
 .cta-button {
     display: inline-block;
     padding: 10px 20px;
+    margin: 16px;
     background-color: #ffe8c2;
     color: #121212;
     text-decoration: none;
@@ -231,33 +233,31 @@ body {
 
 /* MEDIA QUERIES */
 
-@media (min-width: 640px) {
-    .split{
+@media (min-width: 710px) {
+    .split {
+        display: flex;
         flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
     }
 
-    .split > * {
-        flex-basis: 100%;
+    .intro-billede {
+        max-width: 45%;
+        height: auto;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px #000000;
     }
 
-    .split > * + * {
-        margin-left: 32px;
+    .intro-tekst {
+        max-width: 45%;
+        text-align: left;
     }
+
 }
 
-.dark {
-    text-align: center;
-    .container {
-        margin-inline: auto;
-        width: min(90%);
-    }
-    img {
-        display: block;
-        max-width: 100%;
-    }
-}
 
-@media (max-width: 768px) {
+
+@media (max-width: 710px) {
     .nav-links {
         display: none;
         flex-direction: column;
@@ -280,10 +280,27 @@ body {
     .menu-toggle {
         display: flex;
     }
+
+    .split {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .intro-billede img {
+        max-height: 300px;
+    }
+
+    .cta-button {
+        font-size: 13px;
+    }
 }
 
 
-/* PROJEKTER */
+
+
+
+
+/* NY SIDE - PROJEKTER */
 .projekter {
     background-color: #E6E6E6;
 }
