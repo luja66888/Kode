@@ -277,6 +277,16 @@ body {
 
 
 /* ------------- NY SIDE - PROJEKTER  ---------*/
+.side-projekter {
+    margin-top: 69px;
+}
+
+.h2-projekter {
+    padding-top: 12px;
+    text-align: center;
+    background-color: #E6E6E6;
+}
+
 .projekter {
     display: flex;
     flex-wrap: wrap;
@@ -326,7 +336,15 @@ body {
 }
 
 /* -------------- NY SIDE KONTAKT --------------- */
+.side-kontakt {
+    margin-top: 69px;
+}
 
+.h2-kontakt {
+    padding-top: 16px;
+    text-align: center;
+    background-color: #E6E6E6;
+}
 
 input[type=text], select, textarea {
     width: 100%;
@@ -354,7 +372,7 @@ input[type=kommentar]:hover {
 
 .kontaktformular {
     border-radius: 5px;
-    background-color: #f2f2f2;
+    background-color: #E6E6E6;
     padding: 20px;
 }
 
@@ -394,6 +412,7 @@ input[type=kommentar]:hover {
     }
 
 }
+
 
 @media (max-width: 710px) {
     .info-wrapper {
@@ -446,6 +465,8 @@ input[type=kommentar]:hover {
     }
 }
 
+
+/* -------- STOR SKÆRM -------- */
 @media (min-width: 1024px) {
     .projekter {
         display: grid;
@@ -460,4 +481,9 @@ input[type=kommentar]:hover {
         width: 100%;
         margin: 10px auto;
     }
+
+    .om__mig {
+        height: 570px;
+        background-position: 50% 15%;
+    }    
 }
