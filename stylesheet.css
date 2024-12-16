@@ -16,7 +16,7 @@
     width: 100%;
     z-index: 100;
     padding: 10px 20px;
-    background-color: rgba(255, 232, 194, 0.5);
+    background-color: #ffe8c2;
     color: #000000;
     position: fixed;
     transition: background-color 0.3 ease-in-out;
@@ -73,7 +73,7 @@
 }
 
 .menu-toggle .bar {
-    background-color: #fff;
+    background-color: #010101;
     height: 3px;
     width: 25px;
     margin: 5px;
@@ -96,20 +96,16 @@ body {
 }
 
 .info-wrapper {
-    position: absolute;
-    top: 50%;
-    left: 30px;
-    transform: translateY(-50%);
     display: flex;
-    flex-direction: column;
-    gap: 20px;
+    margin-left: 20px;
+    transform: translateY(270px);
 }
 
 .infoboks h2 {
     font-size: 22px;
     font-weight: bold;
-    color: #000000;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    color: #ffffff;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
     text-decoration: underline;
     margin: 0;
     line-height: 1.5;
@@ -117,10 +113,10 @@ body {
 }
 
 .infoboks h3 {
-    font-size: 22px;
+    font-size: 18px;
     font-weight: bold;
-    color: #000000;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    color: #ffffff;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
     margin: 0;
     line-height: 1.5;
     white-space: nowrap;
@@ -242,43 +238,77 @@ body {
 }
 
 
-/* FOOTER */
-.bottom-bar {
+/* VENSTRE FOOTER */
+.footer {
     background-color: #000000;
-}
-
-.bottom-bar__content {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 30px;
-    height: 30px;
     color: #ffffff;
-    font-size: 12px;
-    display: flex;
-    align-items: center;
-    justify-content: end;
-    column-gap: 20px;
+    padding: 20px 0;
 }
 
-.icon {
-    margin-right: 3px;
-    color: #ffffff; 
-}
-
-.bottom-bar__content {
+.footer-container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 30px;
-    height: 60px;
     display: flex;
-    align-items: center;
     justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer-links ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer-links a {
+    color: #000000;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+/* MIDT FOOTER */
+.footer-logo {
+    text-align: center;
+}
+
+.footer-logo img {
+    max-height: 50px;
+    margin-bottom: 10px;
+}
+
+.footer-logo p {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0;
+}
+
+/* HØJRE FOOTER */
+
+.footer-contact {
+    text-align: right;
+}
+
+.footer-contact .telefon,
+.footer-contact .email {
+    margin-bottom: 10px;
+}
+
+.footer-contact .icon {
+    margin-right: 5px;
 }
 
 
 
-
-/* ------------- NY SIDE - PROJEKTER  ---------*/
+/* ------------- NY SIDE PROJEKTER  ---------*/
 .side-projekter {
     margin-top: 69px;
 }
@@ -380,9 +410,39 @@ input[type=kommentar]:hover {
 
 
 
-/* MEDIA QUERIES */
-
+/* ------------- MEDIA QUERIES : TABLET ------------------ */
 @media (min-width: 710px) {
+    .info-wrapper {
+        position: absolute;
+        top: 50%;
+        left: 30px;
+        transform: translateY(-40%);
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .infoboks h2 {
+        font-size: 30px;
+        font-weight: bold;
+        color: #000000;
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+        text-decoration: underline;
+        margin: 0;
+        line-height: 1.5;
+        white-space: nowrap;
+    }
+
+    .infoboks h3 {
+        font-size: 22px;
+        font-weight: bold;
+        color: #000000;
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+        margin: 0;
+        line-height: 1.5;
+        white-space: nowrap;
+    }
+
     .split {
         display: flex;
         flex-direction: row;
@@ -415,20 +475,8 @@ input[type=kommentar]:hover {
 
 }
 
-
+/* MEDIA QUIERIES : HAMBURGER MENU OG INFO TEKST OG BILLEDER*/
 @media (max-width: 710px) {
-    .info-wrapper {
-        left: 10px;
-    }
-
-    .infoboks h2 {
-        font-size: 25px;
-    }
-
-    .infoboks h3 {
-        font-size: 18px;
-    }
-
     
     .nav-links {
         display: none;
@@ -437,7 +485,8 @@ input[type=kommentar]:hover {
         position: absolute;
         top: 60px;
         left: 0;
-        background-color: #28a745;
+        background-color: #ffe8c2;
+        opacity: 0.9;
     }
 
     .nav-links.active {
@@ -468,7 +517,21 @@ input[type=kommentar]:hover {
 }
 
 
-/* -------- STOR SKÆRM -------- */
+/* --------- MEDIA QUIERES: FOOTER -------- */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-contact {
+        text-align: center;
+        margin-top: 20px;
+    }
+}
+
+
+/* -------- MEDIA QUIERIES : DESKTOP -------- */
 @media (min-width: 1024px) {
     .projekter {
         display: grid;
