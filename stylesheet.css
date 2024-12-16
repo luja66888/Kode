@@ -240,34 +240,29 @@ body {
 
 /* VENSTRE FOOTER */
 .footer {
-    background-color: #000000;
-    color: #ffffff;
+    background-color: #ffe8c2;
+    color: #000000;
     padding: 20px 0;
-}
-
-.footer-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
+    text-align: center;
 }
 
 .footer-links ul {
     list-style-type: none;
-    padding: 0;
-    margin: 0;
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+.footer-container {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    align-items: center;
+    gap: 20px;
 }
 
 .footer-links a {
     color: #000000;
     text-decoration: none;
-    font-size: 16px;
-    transition: color 0.3s;
 }
 
 .footer-links a:hover {
@@ -277,7 +272,9 @@ body {
 
 /* MIDT FOOTER */
 .footer-logo {
-    text-align: center;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
 }
 
 .footer-logo img {
@@ -289,21 +286,17 @@ body {
     font-size: 20px;
     font-weight: bold;
     margin: 0;
+    display: flex;
+    align-items: center;
 }
 
 /* HØJRE FOOTER */
 
-.footer-contact {
-    text-align: right;
-}
-
-.footer-contact .telefon,
-.footer-contact .email {
-    margin-bottom: 10px;
-}
-
-.footer-contact .icon {
-    margin-right: 5px;
+.footer-kontakt {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 5px;
 }
 
 
@@ -518,21 +511,43 @@ input[type=kommentar]:hover {
 
 
 /* --------- MEDIA QUIERES: FOOTER -------- */
-@media (max-width: 768px) {
+@media (min-width: 768px) {
     .footer-container {
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: left;
+        padding: 20px;
+    }
+
+    .footer-links ul {
+        display: flex;
         flex-direction: column;
+        text-align: left;
+    }
+
+    .footer-logo {
         text-align: center;
     }
 
-    .footer-contact {
-        text-align: center;
-        margin-top: 20px;
+    .footer-kontakt {
+        text-align: right;
     }
 }
 
 
+
 /* -------- MEDIA QUIERIES : DESKTOP -------- */
 @media (min-width: 1024px) {
+    .footer-container {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .footer-logo .logo {
+        width: 80px;
+    }
+
+
     .projekter {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
