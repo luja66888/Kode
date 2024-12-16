@@ -110,6 +110,7 @@ body {
     margin: 0;
     line-height: 1.5;
     white-space: nowrap;
+    transform: translateX(-25px);
 }
 
 .infoboks h3 {
@@ -120,6 +121,7 @@ body {
     margin: 0;
     line-height: 1.5;
     white-space: nowrap;
+    transform: translateX(-25px);
 }
 
 
