@@ -110,7 +110,6 @@ body {
     margin: 0;
     line-height: 1.5;
     white-space: nowrap;
-    transform: translateX(-25px);
 }
 
 .infoboks h3 {
@@ -121,7 +120,6 @@ body {
     margin: 0;
     line-height: 1.5;
     white-space: nowrap;
-    transform: translateX(-25px);
 }
 
 
@@ -147,9 +145,9 @@ body {
     background-color: #E6E6E6;
 }   
 
-.logos:hover .logos-slide {
+/* .logos:hover .logos-slide {
     animation-play-state: paused
-}
+} */
 
 .logos-slide {
     display: inline-block;
@@ -166,9 +164,10 @@ body {
     background-color: #E6E6E6;
     padding: 10px 20px;
     text-align: center;
+    padding-bottom: 20px;
 }
 
-.dark .container {
+.dark .container-info {
     max-width: 1200px;
     margin: 0 auto;
     display: flex;
@@ -268,8 +267,7 @@ body {
 }
 
 .footer-links a:hover {
-    background-color: #000000;
-    color: #ffffff;
+    text-decoration: underline;
 }
 
 /* MIDT FOOTER */
@@ -425,6 +423,7 @@ input[type=kommentar]:hover {
         margin: 0;
         line-height: 1.5;
         white-space: nowrap;
+        transform: translateX(-25px);
     }
 
     .infoboks h3 {
@@ -435,6 +434,7 @@ input[type=kommentar]:hover {
         margin: 0;
         line-height: 1.5;
         white-space: nowrap;
+        transform: translateX(-25px);
     }
 
     .split {
