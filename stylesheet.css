@@ -300,7 +300,6 @@ body {
 }
 
 
-
 /* ------------- NY SIDE PROJEKTER  ---------*/
 .side-projekter {
     margin-top: 69px;
@@ -466,7 +465,42 @@ input[type=kommentar]:hover {
         margin: 0 50px;
     }
 
+    .footer-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .footer-links {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        margin-left: 160px;
+    }
+
+    .footer-links ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer-logo {
+        text-align: center;
+    }
+
+    .footer-logo p {
+        display: flex;
+        text-align: center;
+    }
+
+    .footer-kontakt {
+        display: flex;
+        justify-content: flex-end;
+        gap: 20px;
+        margin-right: 160px;
+    }
 }
+
 
 /* MEDIA QUIERIES : HAMBURGER MENU OG INFO TEKST OG BILLEDER*/
 @media (max-width: 710px) {
@@ -510,44 +544,9 @@ input[type=kommentar]:hover {
 }
 
 
-/* --------- MEDIA QUIERES: FOOTER -------- */
-@media (min-width: 768px) {
-    .footer-container {
-        flex-direction: row;
-        justify-content: space-between;
-        text-align: left;
-        padding: 20px;
-    }
-
-    .footer-links ul {
-        display: flex;
-        flex-direction: column;
-        text-align: left;
-    }
-
-    .footer-logo {
-        text-align: center;
-    }
-
-    .footer-kontakt {
-        text-align: right;
-    }
-}
-
-
 
 /* -------- MEDIA QUIERIES : DESKTOP -------- */
 @media (min-width: 1024px) {
-    .footer-container {
-        max-width: 1200px;
-        margin: 0 auto;
-    }
-
-    .footer-logo .logo {
-        width: 80px;
-    }
-
-
     .projekter {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
