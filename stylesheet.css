@@ -359,15 +359,30 @@ body {
     text-align: left;
 }
 
+
 /* -------------- NY SIDE KONTAKT --------------- */
 .side-kontakt {
     margin-top: 69px;
+    background-color: #E6E6E6;
 }
 
 .h2-kontakt {
     padding-top: 16px;
     text-align: center;
     background-color: #E6E6E6;
+}
+
+.h2-kontakt p {
+    margin: 20px 20px 30px 20px;
+}
+
+.kontaktformular {
+    max-width: 600px;
+    width: 100%;
+    margin: 0 auto;
+    background-color: #e6e6e6;
+    padding: 20px;
+    border-radius: 5px;
 }
 
 input[type=text], select, textarea {
@@ -382,7 +397,7 @@ input[type=text], select, textarea {
 }
 
 input[type=kommentar] {
-    background-color: #04AA6D;
+    background-color: #ffe8c2;
     color: white;
     padding: 12px 20px;
     border: none;
@@ -391,7 +406,7 @@ input[type=kommentar] {
 }
 
 input[type=kommentar]:hover {
-    background-color: #45a049;
+    background-color: #ffe8c2;
 }
 
 .kontaktformular {
@@ -500,6 +515,11 @@ input[type=kommentar]:hover {
         display: flex;
         justify-content: flex-end;
         gap: 20px;
+    }
+
+    .h2-kontakt p {
+        margin: 20px 200px 30px 200px;
+        font-size: 15px;
     }
 }
 
