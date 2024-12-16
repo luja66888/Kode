@@ -472,13 +472,14 @@ input[type=kommentar]:hover {
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
+        margin-left: 160px;
+        margin-right: 160px;
     }
 
     .footer-links {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         gap: 20px;
-        margin-left: 160px;
     }
 
     .footer-links ul {
@@ -499,7 +500,6 @@ input[type=kommentar]:hover {
         display: flex;
         justify-content: flex-end;
         gap: 20px;
-        margin-right: 160px;
     }
 }
 
@@ -542,6 +542,11 @@ input[type=kommentar]:hover {
 
     .cta-button {
         font-size: 13px;
+    }
+
+    .footer-container {
+        margin-left: 0;
+        margin-right: 0;
     }
 }
 
