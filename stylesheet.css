@@ -22,18 +22,18 @@
     transition: background-color 0.3 ease-in-out;
 }
 
-.logo {
+.navbar__logo {
     display: flex;
     align-items: center;
     gap: 10px;
 }
 
-.logo img {
+.navbar__logo img {
     max-height: 50px;
     height: auto;
 }
 
-.logo a {
+.navbar__logo a {
     color: #000000;
     text-decoration: none;
     font-size: 24px;
@@ -42,16 +42,16 @@
     align-items: center;
 }
 
-.nav-links {
+.nav__links {
     display: flex;
     list-style: none;
 }
 
-.nav-links li {
+.nav__links li {
     margin: 0 15px;
 }
 
-.nav-links a {
+.nav__links a {
     color: #121212;
     text-decoration: none;
     font-size: 18px;
@@ -59,20 +59,20 @@
     padding: 5px 10px;
 }
 
-.nav-links a:hover,
-.nav-links a.active {
+.nav__links a:hover,
+.nav__links a.active {
     color: #ffffff;
     background-color: #000000;
     border-radius: 4px;
 }
 
-.menu-toggle {
+.menu__toggle {
     display: none;
     flex-direction: column;
     cursor: pointer;
 }
 
-.menu-toggle .bar {
+.menu__toggle .menu__bar {
     background-color: #010101;
     height: 3px;
     width: 25px;
@@ -527,7 +527,7 @@ input[type=kommentar]:hover {
 /* MEDIA QUIERIES : HAMBURGER MENU OG INFO TEKST OG BILLEDER*/
 @media (max-width: 710px) {
     
-    .nav-links {
+    .nav__links {
         display: none;
         flex-direction: column;
         width: 100%;
@@ -538,16 +538,16 @@ input[type=kommentar]:hover {
         opacity: 0.9;
     }
 
-    .nav-links.active {
+    .nav__links.active {
         display: flex;
     }
 
-    .nav-links li {
+    .nav__links li {
         margin: 10px 0;
         text-align: center;
     }
 
-    .menu-toggle {
+    .menu__toggle {
         display: flex;
     }
 

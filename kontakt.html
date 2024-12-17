@@ -9,20 +9,20 @@
 </head>
 <body class="side-kontakt">
     <nav class="navbar">
-        <div class="logo">
-            <img src="./billeder/Logo sort grå færdig.webp" alt="Logo Infobucket">
+        <div class="navbar__logo">
+            <img src="./billeder/Logo_sort.webp" alt="Logo Infobucket">
             <a href="index.html">INFOBUCKET</a>
         </div>
-        <ul class="nav-links">
+        <ul class="nav__links">
             <li><a href="index.html">HJEM</a>
             </li>
             <li><a href="projekter.html">PROJEKTER</a></li>
             <li><a href="kontakt.html" class="active">KONTAKT</a></li>
         </ul>
-        <div class="menu-toggle">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
+        <div class="menu__toggle">
+            <span class="menu__bar"></span>
+            <span class="menu__bar"></span>
+            <span class="menu__bar"></span>
         </div>
     </nav>
     
@@ -50,26 +50,26 @@
     
     <div class="kontaktformular">
         <form action="action_page.php">
-            <label for="fnavn">Fulde Navn</label>
+            <h3>Fulde Navn</h3>
             <input type="text" id="første" name="fuldenavn" placeholder="Dit navn...">
 
-            <label for="mobil">Mobil</label>
+            <h3>Mobil</h3>
             <input type="text" id="anden" name="mobilnummer" placeholder="Mobilnummer...">
 
-            <label for="email">E-mail</label>
+            <h3>E-mail</h3>
             <input type="text" id="tredje" name="emailen" placeholder="E-mail...">
 
-            <label for="emne">Emne</label>
+            <h3>Emne</h3>
             <select id="fjerde" name="emne">
                 <option value="hjem">Hjem</option>
                 <option value="projekter">Projekter</option>
                 <option value="kontakt">Kontakt</option>
             </select>
 
-            <label for="kommentar">Kommentar</label>
+            <h3>Kommentar</h3>
             <textarea id="femte" name="kommentarer" placeholder="Skriv noget..." style="height:200px"></textarea>
 
-            <input type="send" value="Send">
+            <button type="submit">Send</button>
         </form>
     </div>
     
@@ -84,7 +84,7 @@
                 </div>
 
                 <div class="footer-logo">
-                    <img src="./billeder/Logo sort grå færdig.webp" alt="Infobucket logo" class="footer-logo-img">
+                    <img src="./billeder/Logo_sort.webp" alt="Infobucket logo" class="footer-logo-img">
                     <p>INFOBUCKET</p>
                 </div>
 
