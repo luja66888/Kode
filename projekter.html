@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="stylesheet.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer">
     <title>PROJEKTER</title>
 </head>
-<body class="side-projekter">
+<body class="side__projekter">
     <nav class="navbar">
         <div class="navbar__logo">
             <img src="./billeder/Logo_sort.webp" alt="Logo Infobucket">
@@ -29,9 +29,9 @@
     <script>
         document.addEventListener('DOMContentLoaded', () => {
             const menuToggle =
-        document.querySelector('.menu-toggle');
+        document.querySelector('.menu__toggle');
             const navLinks =
-        document.querySelector('.nav-links');
+        document.querySelector('.nav__links');
     
             menuToggle.addEventListener('click', () => {
                 navLinks.classList.toggle('active');
@@ -39,52 +39,52 @@
             });
     </script>
 
-    <div class="h2-projekter">
+    <div class="h2__projekter">
         <h2>Udvalgte projekter</h2>
     </div>
     <div class="projekter">
-            <div class="container">
+            <div class="projekter__container">
                 <img src="/projekter/Dating_app.webp" alt="dating app hunde">
-                <div class="tekstboks">
+                <div class="container__tekstboks">
                     <h3>Apps og ideudvikling</h3>
                     <p>Datingapp til hunde inspireret af spillet Pokemon Go</p>
                 </div>
             </div>
-            <div class="container">
+            <div class="projekter__container">
                 <img src="/projekter/Illustrator_portrait_one.webp" alt="illustrator portræt enkelt">
-                <div class="tekstboks">
+                <div class="container__tekstboks">
                     <h3>Illustrator illustrationer</h3>
                     <p>Portræt lavet i Adobe Illustrator kun med Pentool værktøj</p>
                 </div>
             </div>
-            <div class="container">
+            <div class="projekter__container">
                 <img src="/projekter/Post_Malone.webp" alt="produktbillede post malone">
-                <div class="tekstboks">
+                <div class="container__tekstboks">
                     <h3>Profesionelle produktbilleder</h3>
                     <p>Produktbillede af en Post Malone Funko Pop figur</p>
                 </div>
             </div>
-            <div class="container">
+            <div class="projekter__container">
                 <img src="/projekter/Logo_udvikling.webp" alt="logo ideer til infobucket">
-                <div class="tekstboks">
+                <div class="container__tekstboks">
                     <h3>Logo design</h3>
                     <p>Design og ideudvikling af logoer</p>
                 </div>
             </div>
-            <div class="container">
+            <div class="projekter__container">
                 <video controls autoplay loop muted>
                     <source src="/projekter/Logo_animation.mp4">
                 </video>
-                <div class="tekstboks">
+                <div class="container__tekstboks">
                     <h3>Logo animation</h3>
                     <p>Kreative animationer på eksisterende logoer</p>
                 </div>
             </div>
-            <div class="container">
+            <div class="projekter__container">
                 <video controls autoplay loop muted>
                     <source src="/projekter/Thomas_Hill.mp4">
                 </video>
-                <div class="tekstboks">
+                <div class="container__tekstboks">
                     <h3>Animationsvideo</h3>
                     <p>Figurer klippet ud af gamle malerier og redigeret i Adobe After Effect</p>
                 </div>
@@ -92,8 +92,8 @@
     </div>
 
     <footer class="footer">
-        <div class="footer-container">
-                <div class="footer-links">
+        <div class="footer__container">
+                <div class="footer__links">
                     <ul>
                         <li><a href="index.html">HJEM</a></li>
                         <li><a href="projekter.html">PROJEKTER</a></li>
@@ -101,12 +101,12 @@
                     </ul>    
                 </div>
 
-                <div class="footer-logo">
-                    <img src="./billeder/Logo_sort.webp" alt="Infobucket logo" class="footer-logo-img">
+                <div class="footer__logo">
+                    <img src="./billeder/Logo_sort.webp" alt="Infobucket logo" class="footer__logo--img">
                     <p>INFOBUCKET</p>
                 </div>
 
-            <div class="footer-kontakt">   
+            <div class="footer__kontakt">   
                 <div class="telefon">
                     <i class="fa-solid fa-phone icon"></i>
                     +45 27 99 37 70

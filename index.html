@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>INFOBUCKET Præsentationsportefølje</title>
     <link rel="stylesheet" href="stylesheet.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer">
 </head>
 <body>
     <nav class="navbar">
@@ -29,9 +29,9 @@
     <script>
         document.addEventListener('DOMContentLoaded', () => {
             const menuToggle =
-        document.querySelector('.menu-toggle');
+        document.querySelector('.menu__toggle');
             const navLinks =
-        document.querySelector('.nav-links');
+        document.querySelector('.nav__links');
 
             menuToggle.addEventListener('click', () => {
                 navLinks.classList.toggle('active');
@@ -40,21 +40,21 @@
     </script>
 
     <div class="om__mig">
-        <div class="info-wrapper">
-            <div class="info-boxes">
-                <div class="infoboks">
+        <div class="info__wrapper">
+            <div class="info__boxes">
+                <div class="infoboks__tekst">
                     <h2>Lucas Jæger</h2>
                 </div>
-                <div class="infoboks">
+                <div class="infoboks__tekst">
                     <h3>26 år</h3>
                 </div>
-                <div class="infoboks">
+                <div class="infoboks__tekst">
                     <h3>Multimediedesigner</h3>
                 </div>
-                <div class="infoboks">
+                <div class="infoboks__tekst">
                     <h3>Kodning CSS HTML</h3>
                 </div>
-                <div class="infoboks">
+                <div class="infoboks__tekst">
                     <h3>UI/UX Design</h3>
                 </div>
             </div>
@@ -62,9 +62,9 @@
     </div>
 
     <div>
-        <div class="logos">
+        <div class="logo__slide--animation">
             <h2>SKILLS</h2>
-            <div class="logos-slide">
+            <div class="logos__slide">
                 <img src="/Adobe/Ai.png" alt="illustrator logo">
                 <img src="/Adobe/Id.png" alt="indesign logo">
                 <img src="/Adobe/Lr.png" alt="lightroom logo">
@@ -75,7 +75,7 @@
                 <img src="/Adobe/UI.png" alt="UI logo">
                 <img src="/Adobe/UX.png" alt="UX logo">
             </div>
-            <div class="logos-slide">
+            <div class="logos__slide">
                 <img src="/Adobe/Ai.png" alt="illustrator logo">
                 <img src="/Adobe/Id.png" alt="indesign logo">
                 <img src="/Adobe/Lr.png" alt="lightroom logo">
@@ -89,13 +89,13 @@
         </div>
     </div>
 
-<div class="dark">
-    <div class="container-info">
+<div class="tekst__felter">
+    <div class="container__info">
         <div class="split">
-            <div class="intro-billede">
+            <div class="intro__billede">
                 <img src="/billeder/Mig_WEBP.webp" alt="LJ i arbejde stopmotion">
             </div>
-            <div class="intro-tekst">
+            <div class="intro__tekst">
                 <h2>OM MIG</h2>
                 <p>Mit navn er Lucas Jæger, er bosat i Odense og studerer multimediedesign. Jeg er meget passioneret omkring webdesign, appudvikling og at tænke
                     kreativt. Jeg brænder for at se et færdigt produkt, som jeg er stolt af.
@@ -104,16 +104,16 @@
                     I min fritid bruger jeg meget tid ved computeren, både med at spille computerspil, læse og at se videoer om mine interesser. Jeg har altid haft
                     interesse for mange ting og at vide meget. Teknisk viden er et must-have, og især når man står i en uforudset situation.
                 </p>
-                <a href="kontakt.html" class="cta-button">Kontakt mig</a>
+                <a href="kontakt.html" class="knap__cta--button">Kontakt mig</a>
             </div>
         </div>
     </div>
 </div>
 
-<div class="dark">
-    <div class="container-info">
+<div class="tekst__felter">
+    <div class="container__info">
         <div class="split">
-            <div class="intro-tekst">
+            <div class="intro__tekst">
                 <h2>PROJEKTER</h2>
                 <p> Jeg værdisætter mit arbejde og at bruge mine kompetencer bedst muligt. Jeg elsker at udfolde mig kreativt,
                     selvom orden og organisering også bliver prioriteret højt.
@@ -123,9 +123,9 @@
                 Jeg har samlet nogle projekter, som jeg har lavet, og de fordeler sig på forskellige emner og opgaver. Her kan man få et smugkig ind
                 og se, hvordan jeg arbejder.
                 </p>
-                <a href="projekter.html" class="cta-button">Læs mere</a>
+                <a href="projekter.html" class="knap__cta--button">Læs mere</a>
             </div>
-            <div class="intro-billede">
+            <div class="intro__billede">
                 <img src="/projekter/Dating_app.webp" alt="eksempel på et projekt hundedating app">
             </div>
         </div>
@@ -133,8 +133,8 @@
 </div>
 
     <footer class="footer">
-        <div class="footer-container">
-                <div class="footer-links">
+        <div class="footer__container">
+                <div class="footer__links">
                     <ul>
                         <li><a href="index.html">HJEM</a></li>
                         <li><a href="projekter.html">PROJEKTER</a></li>
@@ -142,12 +142,12 @@
                     </ul>    
                 </div>
 
-                <div class="footer-logo">
-                    <img src="./billeder/Logo_sort.webp" alt="Infobucket logo" class="footer-logo-img">
+                <div class="footer__logo">
+                    <img src="./billeder/Logo_sort.webp" alt="Infobucket logo" class="footer__logo--img">
                     <p>INFOBUCKET</p>
                 </div>
 
-            <div class="footer-kontakt">   
+            <div class="footer__kontakt">   
                 <div class="telefon">
                     <i class="fa-solid fa-phone icon"></i>
                     +45 27 99 37 70

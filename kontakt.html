@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KONTAKT</title>
     <link rel="stylesheet" href="stylesheet.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer">
 </head>
-<body class="side-kontakt">
+<body class="side__kontakt">
     <nav class="navbar">
         <div class="navbar__logo">
             <img src="./billeder/Logo_sort.webp" alt="Logo Infobucket">
@@ -29,9 +29,9 @@
     <script>
         document.addEventListener('DOMContentLoaded', () => {
             const menuToggle =
-        document.querySelector('.menu-toggle');
+        document.querySelector('.menu__toggle');
             const navLinks =
-        document.querySelector('.nav-links');
+        document.querySelector('.nav__links');
     
             menuToggle.addEventListener('click', () => {
                 navLinks.classList.toggle('active');
@@ -39,7 +39,7 @@
             });
     </script>    
 
-<div class="h2-kontakt">
+<div class="h2__kontakt">
     <h2>Lad os samarbejde</h2>
     <p>Mangler I en frisk, samarbejdsvillig og troværdig medarbejder som er fokuseret på et godt produkt og at give sine kunder den bedste service?
         Så tøv ikke med at kontakte mig.
@@ -74,8 +74,8 @@
     </div>
     
     <footer class="footer">
-        <div class="footer-container">
-                <div class="footer-links">
+        <div class="footer__container">
+                <div class="footer__links">
                     <ul>
                         <li><a href="index.html">HJEM</a></li>
                         <li><a href="projekter.html">PROJEKTER</a></li>
@@ -83,12 +83,12 @@
                     </ul>    
                 </div>
 
-                <div class="footer-logo">
-                    <img src="./billeder/Logo_sort.webp" alt="Infobucket logo" class="footer-logo-img">
+                <div class="footer__logo">
+                    <img src="./billeder/Logo_sort.webp" alt="Infobucket logo" class="footer__logo--img">
                     <p>INFOBUCKET</p>
                 </div>
 
-            <div class="footer-kontakt">   
+            <div class="footer__kontakt">   
                 <div class="telefon">
                     <i class="fa-solid fa-phone icon"></i>
                     +45 27 99 37 70
